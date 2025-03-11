@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    background-color: #ffffff; 
+    background-color: #f4f4f4; /* BUG 2: Cor errada, a cor do card deveria ser #f4f4f4 */ /*(bugfix2-corrigido)*/
     padding: 20px;
     border-radius: 8px;
     width: 200px;
@@ -30,6 +30,3 @@ button {
     padding: 10px;
     cursor: pointer;
 }
-
-
-/* BUG 2: Cor errada, a cor do card deveria ser #f4f4f4 */
