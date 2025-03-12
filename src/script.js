@@ -5,7 +5,10 @@ document.getElementById("increment").addEventListener("click", function() {
 });
 
 document.getElementById("decrement").onclick = function() {
-   count.innerText --; // BUG 4: Trata innerText como string
+   if (count.innerText != 0) {
+    
+       count.innerText --; // BUG 4: Trata innerText como string
+   } 
 };
 
 // BUG 5: Permite valores negativos
