@@ -1,13 +1,16 @@
 let count = document.getElementById("count");
 
 document.getElementById("increment").addEventListener("click", function() {
-    count.innerText ++; // BUG 3: Não está atribuindo o novo valor
+    let currentCount = parseInt(count.innerText); 
+    count.innerText = currentCount + 1; 
 });
 
 document.getElementById("decrement").onclick = function() {
-     if  (count.innerText != 0) {
-        count.innerText --;
-     } // BUG 4: Trata innerText como string
-};
+    let currentCount = parseInt(count.innerText); 
 
+ 
+    if (currentCount > 0) {
+        count.innerText = currentCount - 1;
+    }
+};
 // BUG 5: Permite valores negativos
