@@ -1,0 +1,3 @@
+document.getElementById("increment").addEventListener("click", function() {
+    count.innerText = parseInt(count.innerText) + 1; // Corrigido para atualizar o valor
+});
