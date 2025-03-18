@@ -6,16 +6,17 @@ body {
 }
 
 .container {
-    background-color: #ffffff; 
+    background-color: #f4f4f4; 
     padding: 20px;
     border-radius: 8px;
-    width: 200px;
+    width: 220px;  
     margin: auto;
 }
 
 p {
     font-size: 24px;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 .buttons {
@@ -29,7 +30,5 @@ button {
     font-size: 20px;
     padding: 10px;
     cursor: pointer;
+    width: 50px; 
 }
-
-
-/* BUG 2: Cor errada, a cor do card deveria ser #f4f4f4 */
