@@ -6,6 +6,10 @@ document.getElementById("increment").addEventListener("click", function() {
 
 document.getElementById("decrement").onclick = function() {
     let valorAtual = parseInt(count.innerText) // BUG 4: Trata innerText como string RESOLVIDO
+    
+    if (valorAtual > 0) {
+        count.innerText = valorAtual - 1;
+    }
 };
 
-// BUG 5: Permite valores negativos
+// BUG 5: Permite valores negativos RESOLVIDO
