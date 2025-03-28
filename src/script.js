@@ -1,11 +1,17 @@
 let count = document.getElementById("count");
 
-document.getElementById("increment").addEventListener("click", function() {
-    count.innerText + 1; // BUG 3: Não está atribuindo o novo valor
-});
+document.getElementById("increment").addEventListener("click", function () {
+    count.innerText = Number(count.innerText) + 1; }); 
+    // BUG 3: Não está atribuindo o novo valor
 
-document.getElementById("decrement").onclick = function() {
-    count.innerText = count.innerText - 1; // BUG 4: Trata innerText como string
-};
+
+    document.getElementById("decrement").onclick = function () {
+        let currentValue = Number(count.innerText);
+        if (currentValue > 0) { // Evita números negativos
+            count.innerText = currentValue - 1;
+        }
+    };
+    // BUG 4: Trata innerText como string
+
 
 // BUG 5: Permite valores negativos
