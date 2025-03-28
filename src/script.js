@@ -5,8 +5,12 @@ document.getElementById("increment").addEventListener("click", function () {
     // BUG 3: Não está atribuindo o novo valor
 
 
-document.getElementById("decrement").onclick = function () {
-    count.innerText = Number(count.innerText) - 1;};
+    document.getElementById("decrement").onclick = function () {
+        let currentValue = Number(count.innerText);
+        if (currentValue > 0) { // Evita números negativos
+            count.innerText = currentValue - 1;
+        }
+    };
     // BUG 4: Trata innerText como string
 
 
