@@ -5,7 +5,8 @@ document.getElementById("increment").addEventListener("click", function() {
 });
 
 document.getElementById("decrement").onclick = function() {
-    count.innerText = Number(count.innerText) - 1;
+    let currentValue = Number(count.innerText);
+    if (currentValue > 0) {
+        count.innerText = currentValue - 1;
+    }
 };
-
-// BUG 5: Permite valores negativos
