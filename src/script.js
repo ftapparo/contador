@@ -6,7 +6,8 @@ document.getElementById("increment").addEventListener("click", function() {
 
 
 document.getElementById("decrement").onclick = function() {
-    count.innerText = count.innerText - 1; // BUG 4: Trata innerText como string
+    count.innerText = parseInt(count.innerText) - 1;  // Corrigido: converte innerText para número
 };
+
 
 // BUG 5: Permite valores negativos
