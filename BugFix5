@@ -1,0 +1,5 @@
+document.getElementById("decrement").onclick = function() {
+    if (parseInt(count.innerText) > 0) {
+        count.innerText = parseInt(count.innerText) - 1; // Evita valores negativos
+    }
+};
